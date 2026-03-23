@@ -18,6 +18,8 @@ class Point2D:
         self._coordinates += other
         return self
     #
+    #
+    #
 
 def test_point_construction() -> None:
     point = Point2D(1.0, 42.0)
