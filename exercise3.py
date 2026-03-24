@@ -35,13 +35,14 @@ class Rectangle:
         return ll_px >= 0 and ll_px <= self._dx \
             and ll_py >= 0 and ll_py <= self._dy
 
-    def _is_idx_on_upper_edge(self, i: int) -> bool:
-        return i in [2, 3]
+    # def _is_idx_on_upper_edge(self, i: int) -> bool:
+    #     return i in [2, 3]
     
-    def _is_idx_on_right_edge(self, i: int) -> bool:
-        return i in [1, 3]
+    # def _is_idx_on_right_edge(self, i: int) -> bool:
+    #     return i in [1, 3]
         
-    # def is_in_interval(...) -> bool: # Task A
+    def is_in_interval(self, value: float, lower: float, upper: float) -> bool: # Task A
+        return lower <= value <= upper
 
 
 def test_rectangle_contains_exact() -> None:
